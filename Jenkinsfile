@@ -19,6 +19,12 @@ pipeline {
             }
 
         }
+        stage('Utilisation des varibles') {
+            steps {
+            sh "echo $USER $FAV_COLOR"
+            }
+
+        }
         // stage('Build Docker Img') {
         //     steps {
         //     sh "docker build . -v /var/run/docker.sock:/var/run/docker.sock -t my-app  "
