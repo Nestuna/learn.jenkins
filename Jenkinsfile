@@ -23,7 +23,7 @@ pipeline {
             steps {
                 sh "echo $USER $FAV_COLOR"
                 sh "HOBBY=Music FAV_COLOR=Red"
-                sh "echo $HOBBY $FAV_COLOR"
+                sh "echo $FAV_COLOR"
             }
         }
         // stage('Build Docker Img') {
