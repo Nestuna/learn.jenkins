@@ -19,11 +19,15 @@ pipeline {
             }
 
         }
-        stage('Utilisation des varibles') {
+        stage('Utilisation des variables') {
             steps {
-            sh "echo $USER $FAV_COLOR"
+                sh "echo $USER $FAV_COLOR"
             }
+            steps {
+                sh "HOBBY=Music FAV_COLOR=Red"
+                sh "echo $HOBBY $FAV_COLOR"
 
+            }
         }
         // stage('Build Docker Img') {
         //     steps {
